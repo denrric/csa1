@@ -6,14 +6,14 @@ function App(conf) {
     cameraZ: 150,
     background: 0x000000,
     tubeRadius: 1,
-    resY: 3,
-    resX: 4,
+    resY: 22,
+    resX: 7,
     noiseCoef: 15,
     timeCoef: 50,
     mouseCoef: 50,
     heightCoef: 70,
     ambientColor: 0xccccc,
-    lightIntensity: .2,
+    lightIntensity: .3,
     light1Color: 0xe15040,
     light2Color: 0x51305A,
     light3Color: 0xe15040,
@@ -231,7 +231,7 @@ CustomCurve.prototype.getPoint = function (t) {
 class Tube {
   constructor(x, y, l, segments, radius, color, noise) {
     this.segments = segments;
-    this.radialSegments = 8;
+    this.radialSegments = 3;
     this.radius = radius;
 
     this.curve = new CustomCurve(x, y, l, noise);

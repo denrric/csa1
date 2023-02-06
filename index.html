@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>A95</title>
-  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat'><link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./style.css">
+  <script type="text/javascript" src="./gsap-latest-beta.min.js"></script>
 
 </head>
 <body>
@@ -44,6 +45,13 @@
 <script src='https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.0.3/chroma.min.js'></script>
 <!-- <script src='https://klevron.github.io/codepen/three.js/OrbitControls.js'></script> -->
 <script  src="./script.js"></script>
+<script>
+  var tl = gsap.timeline({ defaults: { duraion: 1 } })
+  tl.from("h1", { opacity: 0, duration: 2, delay: 0.5, stagger: 0.6 })
+      .from('p', { opacity: 0, duration: 2, ease: "circ.inOut" }, "-=1.5")
+      .from('h3', { opacity: 0, duration: 1, ease: "circ.inOut", stagger: 0.6 }, "-=1.2")
+      // .from('.logo', { width: 0, duration: 1, ease: "circ.inOut"}, "-=1.2")
+</script>
 
 </body>
 </html>
