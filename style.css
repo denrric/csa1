@@ -99,6 +99,9 @@ flex-direction: row;
 
 @media only screen and (min-width: 600px), screen and (max-width: 601px) {
 
+  .container{
+    padding: 10px 20px;
+}
 
   h1{
       font-size: 40px;
