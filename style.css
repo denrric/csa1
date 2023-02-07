@@ -18,13 +18,22 @@ canvas {
 }
 
 header {
+  z-index: 3;
+  width: 100%;
+  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 30px 50px;
+  box-sizing: border-box;
+  background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
 }
 footer{
     position: fixed;
+    width: 100%;
     bottom: 0;
+    z-index: 4;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
 }
 
 
@@ -32,7 +41,7 @@ footer{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 13% 140px;
+  padding: 16% 140px;
 
 }
 
@@ -104,6 +113,12 @@ flex-direction: row;
   .container{
     padding: 10px 20px;
 }
+
+header {
+  padding: 10px 20px;
+}
+
+
 
   h1{
       font-size: 40px;
