@@ -13,7 +13,7 @@ function App(conf) {
     mouseCoef: 50,
     heightCoef: 70,
     ambientColor: 0xccccc,
-    lightIntensity: .3,
+    lightIntensity: .5,
     light1Color: 0xe15040,
     light2Color: 0x51305A,
     light3Color: 0xe15040,
