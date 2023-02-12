@@ -1,67 +1,46 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>A95</title>
   <link rel="stylesheet" href="./style.css">
   <script type="text/javascript" src="./gsap-latest-beta.min.js"></script>
-
 </head>
 <body>
-<!-- partial:index.partial.html -->
-
-<header>
-  <div>
+  <header>
+    <div>
       <a href="./index.html"><img class="usn logo" src="./logo.svg" alt=""></a>
-  </div>
-  <div class="nav-links">
+    </div>
+    <div class="nav-links">
       <h3><a href="https://www.instagram.com/a95labs/" target="_blank">@a95labs</a></h3>
+    </div>
+  </header>
+  <div class="container">
+    <div class="innerwrapper">
+      <div>
+        <h1>def a95:</h1>
+        <p>
+          It is not the strongest of the species that survive, nor the most intelligent, but the one most responsive to
+          change.
+        </p>
+      </div>
+    </div>
   </div>
-</header>
-<div class="container">
- 
-<div class="innerwrapper">
-  <div>
-      <h1 class="glitch" data-text="def a95:">def a95:</h1>     
-      <p>
-        <!-- It is not the strongest of the species that survive, nor the most intelligent, but the one most responsive to change. -->
-        A95 is an investment vehicle deploying capital to fellow founders. We seek those curious enough to dream of a better world, brave enough to demand it, and crazy enough to think they can lead us to it.
-
-      </p>
-  </div>
-</div>
-<!-- <div class="innerwrapper">
-  <div>
-      <h3>
-        A95 is an investment vehicle deploying capital and hard-won experience to fellow founders. We seek those curious enough to dream of a better world, brave enough to demand it, and crazy enough to think they can lead us to it. 
-      </h3>
-      </p>
-  </div>
-</div> -->
-<footer>
-  <div class="fpd usn">
+  <footer>
+    <div class="fpd usn">
       © 2023 A95, <a href="./privacy.html"><span style="text-decoration: underline;">Privacy</span></a>
-  </div>
-</footer>
-</div>
-   
-
-
-
-<!-- partial -->
-<script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/100/three.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.0.3/chroma.min.js'></script>
-<!-- <script src='https://klevron.github.io/codepen/three.js/OrbitControls.js'></script> -->
-<script  src="./script.js"></script>
-<script>
-  var tl = gsap.timeline({ defaults: { duraion: 1 } })
-  tl.from("h1", { opacity: 0, duration: 2, delay: 2, stagger: 0.6 })
+    </div>
+  </footer>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/100/three.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.0.3/chroma.min.js'></script>
+  <script src="./script.js"></script>
+  <script>
+    var tl = gsap.timeline({ defaults: { duraion: 1 } })
+    tl.from("h1", { opacity: 0, duration: 2, delay: 2, stagger: 0.6 })
       .from('p', { opacity: 0, duration: 2, ease: "circ.inOut" }, "-=1.5")
       .from('h3', { opacity: 0, duration: 1, ease: "circ.inOut", stagger: 0.6 }, "-=1.2")
-      // .from('.logo', { width: 0, duration: 1, ease: "circ.inOut"}, "-=1.2")
-</script>
-
+  </script>
 </body>
 </html>
